@@ -80,6 +80,7 @@ export const kimi = asyncHandler(async (req: Request, res: Response) => {
     }
 
     res.write('data: [DONE]\n\n')
+    res.end()
   } catch (err) {
     console.log('error in Kimi chat: ', err)
     res.write('data: [DONE]\n\n')
